@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     
     <style>
-      .heading{color: #0a7f2e;}
-      .card { max-width: 520px; margin: 2rem auto; padding: 1.25rem; background: #fff; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.06); }
-      .tabs { display:flex; gap:.5rem; margin-bottom:1rem }
+      .heading{color: #0d22a9;text-align: center;}
+      .card {min-width: 450px; max-width: 520px;height: fit-content; margin: 2rem auto; padding: 1.25rem; background: #fff; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.06); }
+      .tabs { display:flex;justify-content: center;align-items: center; gap:.5rem; margin-bottom:1rem }
       .tabs button { padding:.5rem .9rem; border-radius:8px; border:1px solid #ddd; background:#f6f7fb; cursor:pointer }
       .tabs button.active { background:#e8eeff; border-color:#b6c4ff; }
       form { display:grid; gap:.6rem }
@@ -17,13 +17,14 @@
       input, select, textarea, button { padding:.6rem .7rem; border:1px solid #ddd; border-radius:8px; }
       button[type="submit"] { background:#3b82f6; color:#fff; border-color:#3b82f6; font-weight:700; cursor:pointer }
       .hint { font-size:.9rem; color:#666; }
+      .bottom{text-align: center;}
       .ok { color:#0a7f2e } .err { color:#b00020 }
       .sep { height:1px; background:#eee; margin:1rem 0 }
     </style>
   </head>
   <body>
     <div class="card">
-      <h1 class="heading">College Management System</h1>
+      <h1 class="heading">CollegeMitra </h1>
 
       <div class="tabs">
         <button id="tabLogin" class="active" type="button">Login</button>
@@ -68,11 +69,10 @@
         <p id="rmsg" class=""></p>
       </form>
 
-      <!-- <div class="sep"></div> -->
-      <!-- <div class="hint">
-        If you're running locally, set API once in browser console:
-        <code>localStorage.setItem('API_BASE','http://127.0.0.1:4000/api')</code>
-      </div> -->
+      <div class="sep"></div>
+      <div class="hint bottom">
+      CollegeMitra - a College Management System
+      </div>
     </div>
 
     <script src="./assets/js/api.js"></script>
